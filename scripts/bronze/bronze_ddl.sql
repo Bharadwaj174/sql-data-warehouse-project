@@ -66,12 +66,11 @@ create table bronze.erp_loc_a101(
 	cntry nvarchar(55)
 );
 
-if object_id('bronze.px_cat_g1v2','U') is not null
-	DROP table bronze.px_cat_g1v2;
-create table bronze.px_cat_g1v2(
+if object_id('bronze.erp_px_cat_g1v2','U') is not null
+	DROP table bronze.erp_px_cat_g1v2;
+create table bronze.erp_px_cat_g1v2(
 	 ID nvarchar(55),
 	 CAT nvarchar(55),
 	 SUBCAT nvarchar(55),
 	 MAINTENANCE NVARCHAR(55)
 );
-

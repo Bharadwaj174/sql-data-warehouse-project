@@ -18,6 +18,7 @@ Usage Example:
 ===============================================================================
 */
 
+
 /*
 ============
 FULL LOAD
@@ -94,9 +95,9 @@ begin
 		);
 
 
-		print '>>Truncating and inserting data into bronze.px_cat_g1v2...'
-		truncate table [bronze].[px_cat_g1v2];
-		bulk insert [bronze].[px_cat_g1v2]
+		print '>>Truncating and inserting data into bronze.erp_px_cat_g1v2...'
+		truncate table [bronze].[erp_px_cat_g1v2];
+		bulk insert [bronze].[erp_px_cat_g1v2]
 		from 'C:\Users\BharadwajVenkataSriR\Desktop\Problems\CT-DBX-PRJ-100\source_data\datasets\datasets\source_erp\PX_CAT_G1V2.csv'
 		with(
 			firstrow=2,
